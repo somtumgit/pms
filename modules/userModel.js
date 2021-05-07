@@ -1,17 +1,17 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-mongoose.connect('mongodb://localhost:27017/pms', {
-    useNewUrlParser: true, 
-    useUnifiedTopology: true,
-    useCreateIndex: true
-});
-
-// mongoose.connect('mongodb+srv://mern01:023111998@cluster0.7x7ke.mongodb.net/pms?retryWrites=true&w=majority', {
+// mongoose.connect('mongodb://localhost:27017/pms', {
 //     useNewUrlParser: true, 
 //     useUnifiedTopology: true,
 //     useCreateIndex: true
 // });
+
+mongoose.connect('mongodb+srv://mern01:023111998@cluster0.7x7ke.mongodb.net/pms?retryWrites=true&w=majority', {
+    useNewUrlParser: true, 
+    useUnifiedTopology: true,
+    useCreateIndex: true
+});
 
 const conn = mongoose.connection;
 
